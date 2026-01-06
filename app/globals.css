@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Restaurant Color Palette */
+    /* Palette principale */
+    --color-primary: #395144;        /* Vert forêt (base) */
+    --color-primary-light: #4A6B5A;  /* Vert sauge clair */
+    --color-primary-dark: #2A3D33;   /* Vert profond */
+
+    /* Couleurs complémentaires chaudes */
+    --color-accent-warm: #D4A574;    /* Terracotta doré */
+    --color-accent-hot: #C85A3C;     /* Rouge terre cuite */
+    --color-accent-cream: #F5EFE7;   /* Beige crème */
+
+    /* Neutres sophistiqués */
+    --color-neutral-dark: #2C2C2C;   /* Charbon */
+    --color-neutral-medium: #6B6B6B; /* Gris pierre */
+    --color-neutral-light: #F8F6F3;  /* Blanc cassé chaud */
+    --color-white: #FFFFFF;
+
+    /* Accents fonctionnels */
+    --color-success: #52734D;        /* Vert naturel */
+    --color-warning: #D4A574;        /* Or ancien */
+    --color-error: #A94442;          /* Rouge vin */
+
+    /* Conversion HSL pour Tailwind */
+    --background: 30 30% 97%;               /* #F8F6F3 - Blanc cassé chaud (fond principal) */
+    --foreground: 0 0% 17%;                 /* #2C2C2C - Charbon (texte principal) */
+    --card: 0 0% 100%;                      /* #FFFFFF - Blanc (cartes) */
+    --card-foreground: 0 0% 17%;            /* #2C2C2C - Charbon */
+    --popover: 0 0% 100%;                   /* #FFFFFF */
+    --popover-foreground: 0 0% 17%;         /* #2C2C2C */
+    --primary: 35 51% 64%;                  /* #D4A574 - Terracotta doré */
+    --primary-foreground: 0 0% 100%;        /* #FFFFFF - Blanc */
+    --secondary: 150 23% 37%;               /* #4A6B5A - Vert sauge clair */
+    --secondary-foreground: 30 30% 97%;     /* #F8F6F3 */
+    --accent: 35 51% 64%;                   /* #D4A574 - Terracotta doré */
+    --accent-foreground: 0 0% 100%;         /* #FFFFFF */
+    --muted: 0 4% 42%;                      /* #6B6B6B - Gris pierre */
+    --muted-foreground: 0 4% 50%;           /* Gris moyen */
+    --destructive: 5 42% 46%;               /* #A94442 - Rouge vin */
+    --destructive-foreground: 30 30% 97%;   /* #F8F6F3 */
+    --border: 0 0% 88%;                     /* Bordure gris très clair */
+    --input: 0 0% 88%;                      /* Input gris très clair */
+    --ring: 35 51% 64%;                     /* #D4A574 - Terracotta doré */
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-montserrat), system-ui, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-smooth: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+    font-family: var(--font-cormorant), serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Glassmorphism Effects */
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-dark {
+    background: rgba(30, 41, 59, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Restaurant Brand Colors */
+  .bg-primary-warm {
+    background: var(--color-accent-warm);
+  }
+
+  .bg-primary-hot {
+    background: var(--color-accent-hot);
+  }
+
+  .bg-cream {
+    background: var(--color-accent-cream);
+  }
+
+  .text-warm {
+    color: var(--color-accent-warm);
+  }
+
+  .text-hot {
+    color: var(--color-accent-hot);
+  }
+
+  .border-warm {
+    border-color: var(--color-accent-warm);
+  }
+
+  /* Interactive States - Minimal Approach */
+  .card-lift {
+    transition: all 0.3s ease;
+  }
+
+  .card-lift:hover {
+    transform: scale(1.02);
+  }
+}

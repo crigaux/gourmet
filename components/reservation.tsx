@@ -44,7 +44,7 @@ export function Reservation() {
             </div>
 
             {/* Hours */}
-            <div className="space-y-8 md:text-left">
+            <div className="space-y-8 md:text-right">
               <div>
                 <h3 className="text-2xl text-muted-foreground font-light mb-4">Horaires</h3>
                 <div className="space-y-2">

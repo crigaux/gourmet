@@ -2,17 +2,18 @@
 
 ## Polices Utilisées
 
-### 1. **Dancing Script** (Titres et éléments d'affichage)
-- Police cursive élégante avec un véritable effet d'écriture manuscrite
-- Style chaleureux et personnel, parfait pour les titres
-- Usage: Titres (h1-h6), typographie d'affichage
-- Poids: 600 (Semi Bold)
+### 1. **Great Vibes** (Titres et éléments d'affichage)
+- Police calligraphique élégante, parfaite pour un accent raffiné
+- Style sophistiqué idéal pour les établissements chics
+- Usage: Titres (h1-h6), noms de plats, sections de menu
+- Poids: 400 (Regular)
+- **Important**: À utiliser uniquement pour les titres courts, pas pour les paragraphes
 
 **Utilisation:**
 ```tsx
-<h1>Mon titre</h1>  // Automatiquement en Dancing Script
+<h1>Mon titre</h1>  // Automatiquement en Great Vibes
 <span className="font-display">Texte en display</span>
-<span className="font-script">Texte manuscrit</span>
+<span className="font-script">Nom de plat élégant</span>
 ```
 
 ### 2. **Poppins Extra Light** (Texte de corps)
@@ -42,8 +43,8 @@
 
 | Classe | Police | Poids | Usage |
 |--------|--------|-------|-------|
-| `.font-display` | Dancing Script | 600 | Titres d'affichage |
-| `.font-script` | Dancing Script | 600 | Écriture manuscrite |
+| `.font-display` | Great Vibes | 400 | Titres d'affichage |
+| `.font-script` | Great Vibes | 400 | Calligraphie élégante |
 | `.font-poppins-light` | Poppins | 200 | Texte léger |
 | `.font-poppins-semibold` | Poppins | 600 | Emphase |
 | `.gradient-text` | - | - | Effet gradient sur texte |
@@ -51,7 +52,7 @@
 ## Hiérarchie Typographique
 
 ```
-Titres (h1-h6)     → Dancing Script (Cursive manuscrite)
+Titres (h1-h6)     → Great Vibes (Calligraphique)
 Corps de texte     → Poppins Extra Light (200)
 Emphase/Important  → Poppins Semi Bold (600)
 ```
@@ -59,8 +60,14 @@ Emphase/Important  → Poppins Semi Bold (600)
 ## Équilibre Visuel
 
 La combinaison de ces polices crée un équilibre parfait:
-- **Dancing Script**: Écriture manuscrite élégante et personnelle, apportant chaleur et authenticité
+- **Great Vibes**: Calligraphie élégante et raffinée, parfaite pour les établissements chics et les cartes des vins
 - **Poppins Extra Light**: Légèreté géométrique et modernité pour une lisibilité optimale
-- **Poppins Semi Bold**: Structure et lisibilité pour l'emphase
+- **Poppins Semi Bold**: Structure et emphase pour les éléments importants
 
-Cette association marie l'élégance personnelle d'une écriture manuscrite avec la modernité épurée d'une police géométrique.
+Cette association marie l'élégance calligraphique d'un établissement raffiné avec la modernité épurée d'une typographie contemporaine.
+
+## Recommandations d'Usage
+
+- **Great Vibes**: Réservée aux titres courts, noms de sections, et noms de plats. Ne jamais l'utiliser pour de longs paragraphes.
+- **Poppins Extra Light**: Pour tout le contenu textuel et les descriptions.
+- **Poppins Semi Bold**: Pour mettre en valeur prix, labels, et éléments clés.

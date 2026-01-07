@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Dancing_Script } from "next/font/google";
+import { Poppins, Great_Vibes } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -9,11 +9,11 @@ const poppins = Poppins({
   weight: ["200", "600"],
 });
 
-const dancingScript = Dancing_Script({
+const greatVibes = Great_Vibes({
   subsets: ["latin"],
   variable: "--font-script",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${poppins.variable} ${dancingScript.variable} font-sans antialiased`}>
+      <body className={`${poppins.variable} ${greatVibes.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

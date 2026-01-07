@@ -18,8 +18,8 @@ export function Reservation() {
         </div>
 
         {/* Contact Info */}
-        <div className="space-y-12 flex flex-col items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full max-w-2xl">
+        <div className="space-y-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-2xl mx-auto">
             {/* Contact Details */}
             <div className="space-y-8">
               <div>

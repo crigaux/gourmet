@@ -91,8 +91,8 @@ export function MenuSection() {
                     <Utensils className="w-8 h-8 text-secondary" />
                   </div>
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-bold mb-1">{menuCategories[0].title}</h3>
-                    <p className="text-muted-foreground">{menuCategories[0].description}</p>
+                    <h3 className="mb-1">{menuCategories[0].title}</h3>
+                    <p className="text-muted-foreground text-lg">{menuCategories[0].description}</p>
                   </div>
                 </div>
                 <Sparkles className="w-5 h-5 text-luxury" />
@@ -101,14 +101,14 @@ export function MenuSection() {
                 {menuCategories[0].items.map((item) => (
                   <div key={item.name} className="flex justify-between items-start pb-4 border-b border-border/30 last:border-0">
                     <div>
-                      <span className="font-semibold text-lg">{item.name}</span>
+                      <span className="font-semibold text-2xl">{item.name}</span>
                       {item.badge && (
-                        <span className="ml-2 text-xs px-2 py-1 rounded-full bg-luxury/20 text-luxury font-medium">
+                        <span className="ml-2 text-sm px-3 py-1 rounded-full bg-luxury/20 text-luxury font-medium">
                           {item.badge}
                         </span>
                       )}
                     </div>
-                    <span className="text-secondary font-bold text-lg">{item.price}</span>
+                    <span className="text-secondary font-bold text-2xl">{item.price}</span>
                   </div>
                 ))}
               </div>
@@ -123,22 +123,22 @@ export function MenuSection() {
                   <Wine className="w-8 h-8 text-accent" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">{menuCategories[1].title}</h3>
-                  <p className="text-sm text-muted-foreground">{menuCategories[1].description}</p>
+                  <h3>{menuCategories[1].title}</h3>
+                  <p className="text-lg text-muted-foreground">{menuCategories[1].description}</p>
                 </div>
               </div>
               <div className="space-y-6 flex-grow">
                 {menuCategories[1].items.map((item) => (
                   <div key={item.name} className="group/item">
                     <div className="flex justify-between items-start mb-2">
-                      <span className="font-semibold">{item.name}</span>
+                      <span className="font-semibold text-2xl">{item.name}</span>
                       {item.badge && (
-                        <span className="text-xs px-2 py-1 rounded-full bg-luxury/20 text-luxury font-medium">
+                        <span className="text-sm px-3 py-1 rounded-full bg-luxury/20 text-luxury font-medium">
                           {item.badge}
                         </span>
                       )}
                     </div>
-                    <div className="text-accent font-bold text-lg">{item.price}</div>
+                    <div className="text-accent font-bold text-2xl">{item.price}</div>
                     <div className="h-px bg-border/30 mt-4" />
                   </div>
                 ))}
@@ -154,15 +154,15 @@ export function MenuSection() {
                   <Cake className="w-8 h-8 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">{menuCategories[2].title}</h3>
-                  <p className="text-muted-foreground">{menuCategories[2].description}</p>
+                  <h3>{menuCategories[2].title}</h3>
+                  <p className="text-muted-foreground text-lg">{menuCategories[2].description}</p>
                 </div>
               </div>
               <div className="grid md:grid-cols-3 gap-6">
                 {menuCategories[2].items.map((item) => (
                   <div key={item.name} className="text-center p-4 rounded-xl hover:bg-secondary/5 transition-colors">
-                    <div className="font-semibold mb-2">{item.name}</div>
-                    <div className="text-primary font-bold">{item.price}</div>
+                    <div className="font-semibold text-xl mb-2">{item.name}</div>
+                    <div className="text-primary font-bold text-xl">{item.price}</div>
                   </div>
                 ))}
               </div>
@@ -179,8 +179,8 @@ export function MenuSection() {
                   <Coffee className="w-8 h-8 text-secondary" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold">{menuCategories[3].title}</h3>
-                  <p className="text-muted-foreground">{menuCategories[3].description}</p>
+                  <h3>{menuCategories[3].title}</h3>
+                  <p className="text-muted-foreground text-lg">{menuCategories[3].description}</p>
                 </div>
               </div>
               <Button variant="outline" className="glass">Voir la carte complète</Button>
@@ -188,8 +188,8 @@ export function MenuSection() {
             <div className="grid md:grid-cols-3 gap-8">
               {menuCategories[3].items.map((item) => (
                 <div key={item.name} className="flex justify-between items-center p-4 rounded-xl hover:bg-secondary/5 transition-colors">
-                  <span className="font-medium">{item.name}</span>
-                  <span className="text-secondary font-bold">{item.price}</span>
+                  <span className="font-medium text-xl">{item.name}</span>
+                  <span className="text-secondary font-bold text-xl">{item.price}</span>
                 </div>
               ))}
             </div>

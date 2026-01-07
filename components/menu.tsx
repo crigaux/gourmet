@@ -82,7 +82,7 @@ export function Menu() {
           {menuCategories.map((category, idx) => (
             <div key={idx}>
               {/* Category Title */}
-              <h3 className="mb-10 text-center">
+              <h3 className="mb-10 text-center text-4xl">
                 {category.name}
               </h3>
 

@@ -68,7 +68,7 @@ export function Footer() {
           {/* Footer Links */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <h4 className="text-lg font-light tracking-wide mb-4 text-[#F8F6F3]">
+              <h4 className="text-xl font-light tracking-wide mb-4 text-[#F8F6F3]">
                 {category}
               </h4>
               <ul className="space-y-3">

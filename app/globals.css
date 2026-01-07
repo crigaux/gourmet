@@ -67,7 +67,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply tracking-tight;
-    font-family: 'Reklame Script', cursive;
+    font-family: 'Marcovaldo', serif;
     font-weight: 400;
   }
 
@@ -141,8 +141,8 @@
   }
 
   /* Font Family Utilities */
-  .font-script {
-    font-family: 'Reklame Script', cursive;
+  .font-display {
+    font-family: 'Marcovaldo', serif;
     font-weight: 400;
   }
 

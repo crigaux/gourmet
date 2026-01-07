@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <head>
-        <link href="https://fonts.cdnfonts.com/css/reklame-script" rel="stylesheet" />
+        <link href="https://fonts.cdnfonts.com/css/marcovaldo" rel="stylesheet" />
       </head>
       <body className={`${poppins.variable} font-sans antialiased`}>
         {children}

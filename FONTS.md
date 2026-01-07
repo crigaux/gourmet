@@ -2,15 +2,15 @@
 
 ## Polices Utilisées
 
-### 1. **Reklame Script** (Titres et éléments décoratifs)
-- Style manuscrit influencé par la publicité print des années 40-50
-- Apporte chaleur, convivialité et personnalité
-- Usage: Titres (h1-h6), éléments de marque
+### 1. **Marcovaldo** (Titres et éléments d'affichage)
+- Serif condensé mêlant élégance historique et innovation moderne
+- Style captivant parfait pour les titres
+- Usage: Titres (h1-h6), typographie d'affichage
 
 **Utilisation:**
 ```tsx
-<h1>Mon titre</h1>  // Automatiquement en Reklame Script
-<span className="font-script">Texte en script</span>
+<h1>Mon titre</h1>  // Automatiquement en Marcovaldo
+<span className="font-display">Texte en display</span>
 ```
 
 ### 2. **Poppins Extra Light** (Texte de corps)
@@ -40,7 +40,7 @@
 
 | Classe | Police | Poids | Usage |
 |--------|--------|-------|-------|
-| `.font-script` | Reklame Script | 400 | Titres décoratifs |
+| `.font-display` | Marcovaldo | 400 | Titres d'affichage |
 | `.font-poppins-light` | Poppins | 200 | Texte léger |
 | `.font-poppins-semibold` | Poppins | 600 | Emphase |
 | `.gradient-text` | - | - | Effet gradient sur texte |
@@ -48,16 +48,16 @@
 ## Hiérarchie Typographique
 
 ```
-Titres (h1-h6)     → Reklame Script
+Titres (h1-h6)     → Marcovaldo (Serif condensé)
 Corps de texte     → Poppins Extra Light (200)
 Emphase/Important  → Poppins Semi Bold (600)
 ```
 
 ## Équilibre Visuel
 
-La combinaison de ces trois polices crée un équilibre parfait:
-- **Reklame Script**: Chaleur et personnalité (années 40-50)
-- **Poppins Extra Light**: Légèreté et modernité
-- **Poppins Semi Bold**: Structure et lisibilité
+La combinaison de ces polices crée un équilibre parfait:
+- **Marcovaldo**: Élégance historique avec innovation moderne, captivant pour l'affichage
+- **Poppins Extra Light**: Légèreté géométrique et modernité
+- **Poppins Semi Bold**: Structure et lisibilité pour l'emphase
 
-Cette association évoque l'élégance intemporelle tout en restant contemporaine.
+Cette association marie l'élégance intemporelle d'un serif condensé avec la modernité épurée des géométriques.

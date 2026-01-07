@@ -2,15 +2,17 @@
 
 ## Polices Utilisées
 
-### 1. **Marcovaldo** (Titres et éléments d'affichage)
-- Serif condensé mêlant élégance historique et innovation moderne
-- Style captivant parfait pour les titres
+### 1. **Dancing Script** (Titres et éléments d'affichage)
+- Police cursive élégante avec un véritable effet d'écriture manuscrite
+- Style chaleureux et personnel, parfait pour les titres
 - Usage: Titres (h1-h6), typographie d'affichage
+- Poids: 600 (Semi Bold)
 
 **Utilisation:**
 ```tsx
-<h1>Mon titre</h1>  // Automatiquement en Marcovaldo
+<h1>Mon titre</h1>  // Automatiquement en Dancing Script
 <span className="font-display">Texte en display</span>
+<span className="font-script">Texte manuscrit</span>
 ```
 
 ### 2. **Poppins Extra Light** (Texte de corps)
@@ -40,7 +42,8 @@
 
 | Classe | Police | Poids | Usage |
 |--------|--------|-------|-------|
-| `.font-display` | Marcovaldo | 400 | Titres d'affichage |
+| `.font-display` | Dancing Script | 600 | Titres d'affichage |
+| `.font-script` | Dancing Script | 600 | Écriture manuscrite |
 | `.font-poppins-light` | Poppins | 200 | Texte léger |
 | `.font-poppins-semibold` | Poppins | 600 | Emphase |
 | `.gradient-text` | - | - | Effet gradient sur texte |
@@ -48,7 +51,7 @@
 ## Hiérarchie Typographique
 
 ```
-Titres (h1-h6)     → Marcovaldo (Serif condensé)
+Titres (h1-h6)     → Dancing Script (Cursive manuscrite)
 Corps de texte     → Poppins Extra Light (200)
 Emphase/Important  → Poppins Semi Bold (600)
 ```
@@ -56,8 +59,8 @@ Emphase/Important  → Poppins Semi Bold (600)
 ## Équilibre Visuel
 
 La combinaison de ces polices crée un équilibre parfait:
-- **Marcovaldo**: Élégance historique avec innovation moderne, captivant pour l'affichage
-- **Poppins Extra Light**: Légèreté géométrique et modernité
+- **Dancing Script**: Écriture manuscrite élégante et personnelle, apportant chaleur et authenticité
+- **Poppins Extra Light**: Légèreté géométrique et modernité pour une lisibilité optimale
 - **Poppins Semi Bold**: Structure et lisibilité pour l'emphase
 
-Cette association marie l'élégance intemporelle d'un serif condensé avec la modernité épurée des géométriques.
+Cette association marie l'élégance personnelle d'une écriture manuscrite avec la modernité épurée d'une police géométrique.

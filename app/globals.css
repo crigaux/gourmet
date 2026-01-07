@@ -67,8 +67,8 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply tracking-tight;
-    font-family: 'Marcovaldo', serif;
-    font-weight: 400;
+    font-family: var(--font-script), cursive;
+    font-weight: 600;
   }
 
   /* Poppins Semi Bold pour certains éléments */
@@ -142,8 +142,13 @@
 
   /* Font Family Utilities */
   .font-display {
-    font-family: 'Marcovaldo', serif;
-    font-weight: 400;
+    font-family: var(--font-script), cursive;
+    font-weight: 600;
+  }
+
+  .font-script {
+    font-family: var(--font-script), cursive;
+    font-weight: 600;
   }
 
   .font-poppins-light {

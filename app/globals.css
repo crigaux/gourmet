@@ -88,8 +88,8 @@
     font-family: var(--font-script), cursive;
     font-weight: 400;
     letter-spacing: 0.02em;
-    font-size: 3.75rem; /* 60px */
-    line-height: 1.2;
+    font-size: 5rem; /* 80px */
+    line-height: 1.1;
   }
 
   h4 {

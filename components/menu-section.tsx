@@ -101,14 +101,14 @@ export function MenuSection() {
                 {menuCategories[0].items.map((item) => (
                   <div key={item.name} className="flex justify-between items-start pb-4 border-b border-border/30 last:border-0">
                     <div>
-                      <span className="font-semibold text-2xl">{item.name}</span>
+                      <span className="font-semibold text-3xl">{item.name}</span>
                       {item.badge && (
-                        <span className="ml-2 text-sm px-3 py-1 rounded-full bg-luxury/20 text-luxury font-medium">
+                        <span className="ml-2 text-base px-3 py-1 rounded-full bg-luxury/20 text-luxury font-medium">
                           {item.badge}
                         </span>
                       )}
                     </div>
-                    <span className="text-secondary font-bold text-2xl">{item.price}</span>
+                    <span className="text-secondary font-bold text-3xl">{item.price}</span>
                   </div>
                 ))}
               </div>
@@ -131,14 +131,14 @@ export function MenuSection() {
                 {menuCategories[1].items.map((item) => (
                   <div key={item.name} className="group/item">
                     <div className="flex justify-between items-start mb-2">
-                      <span className="font-semibold text-2xl">{item.name}</span>
+                      <span className="font-semibold text-3xl">{item.name}</span>
                       {item.badge && (
-                        <span className="text-sm px-3 py-1 rounded-full bg-luxury/20 text-luxury font-medium">
+                        <span className="text-base px-3 py-1 rounded-full bg-luxury/20 text-luxury font-medium">
                           {item.badge}
                         </span>
                       )}
                     </div>
-                    <div className="text-accent font-bold text-2xl">{item.price}</div>
+                    <div className="text-accent font-bold text-3xl">{item.price}</div>
                     <div className="h-px bg-border/30 mt-4" />
                   </div>
                 ))}
@@ -161,8 +161,8 @@ export function MenuSection() {
               <div className="grid md:grid-cols-3 gap-6">
                 {menuCategories[2].items.map((item) => (
                   <div key={item.name} className="text-center p-4 rounded-xl hover:bg-secondary/5 transition-colors">
-                    <div className="font-semibold text-xl mb-2">{item.name}</div>
-                    <div className="text-primary font-bold text-xl">{item.price}</div>
+                    <div className="font-semibold text-2xl mb-2">{item.name}</div>
+                    <div className="text-primary font-bold text-2xl">{item.price}</div>
                   </div>
                 ))}
               </div>
@@ -188,8 +188,8 @@ export function MenuSection() {
             <div className="grid md:grid-cols-3 gap-8">
               {menuCategories[3].items.map((item) => (
                 <div key={item.name} className="flex justify-between items-center p-4 rounded-xl hover:bg-secondary/5 transition-colors">
-                  <span className="font-medium text-xl">{item.name}</span>
-                  <span className="text-secondary font-bold text-xl">{item.price}</span>
+                  <span className="font-medium text-2xl">{item.name}</span>
+                  <span className="text-secondary font-bold text-2xl">{item.price}</span>
                 </div>
               ))}
             </div>

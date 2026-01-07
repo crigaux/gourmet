@@ -57,7 +57,8 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: var(--font-montserrat), system-ui, sans-serif;
+    font-family: var(--font-poppins), system-ui, sans-serif;
+    font-weight: 200; /* Poppins Extra Light */
     font-feature-settings: "rlig" 1, "calt" 1;
     font-smooth: antialiased;
     -webkit-font-smoothing: antialiased;
@@ -66,7 +67,14 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply tracking-tight;
-    font-family: var(--font-cormorant), serif;
+    font-family: 'Reklame Script', cursive;
+    font-weight: 400;
+  }
+
+  /* Poppins Semi Bold pour certains éléments */
+  strong, b, .font-semibold, .font-bold {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+    font-weight: 600; /* Poppins Semi Bold */
   }
 }
 
@@ -130,5 +138,29 @@
 
   .card-lift:hover {
     transform: scale(1.02);
+  }
+
+  /* Font Family Utilities */
+  .font-script {
+    font-family: 'Reklame Script', cursive;
+    font-weight: 400;
+  }
+
+  .font-poppins-light {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+    font-weight: 200; /* Extra Light */
+  }
+
+  .font-poppins-semibold {
+    font-family: var(--font-poppins), system-ui, sans-serif;
+    font-weight: 600; /* Semi Bold */
+  }
+
+  /* Gradient text effect */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-accent-warm) 0%, var(--color-accent-hot) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

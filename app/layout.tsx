@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-cormorant",
+  variable: "--font-poppins",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
-  weight: ["300", "400", "500", "600"],
+  weight: ["200", "600"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${cormorant.variable} ${montserrat.variable} font-sans antialiased`}>
+      <head>
+        <link href="https://fonts.cdnfonts.com/css/reklame-script" rel="stylesheet" />
+      </head>
+      <body className={`${poppins.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

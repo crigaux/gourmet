@@ -37,7 +37,7 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <span className={`text-4xl font-script transition-colors ${
+            <span className={`text-5xl font-script transition-colors ${
               isScrolled || !isHomePage ? "text-[#F8F6F3]" : "text-white"
             }`}>
               Le Gourmet

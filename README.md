@@ -1,47 +1,48 @@
-# RestoSaaS Landing Page
+# Le Gourmet - Restaurant Website
 
-A modern, tech-luxe landing page for a restaurant management SaaS platform. Built with Next.js, TypeScript, Tailwind CSS, and cutting-edge design principles.
+A sophisticated, elegant website for Le Gourmet, a fine French restaurant. Built with Next.js, TypeScript, Tailwind CSS, and modern design principles.
 
 ## Design Philosophy
 
-This landing page showcases a **contemporary tech-luxe** aesthetic inspired by modern SaaS leaders:
+This website showcases a **refined, elegant** aesthetic appropriate for a high-end French restaurant:
 
-- **Minimalist & Clean**: Generous whitespace, breathable layouts
-- **Glassmorphism**: Subtle backdrop-blur effects with transparency
-- **Gradient Mesh**: Multi-color gradients (Blue → Green → Orange)
-- **Smooth Animations**: Fluid micro-interactions and transitions
-- **Bento Grid**: Asymmetric grid layouts for feature showcases
+- **Minimalist & Elegant**: Clean layouts with generous whitespace
+- **Typography-First**: Beautiful font pairings (Great Vibes + Poppins)
+- **Image-Focused**: Gallery showcasing culinary artistry
+- **Warm & Inviting**: Sophisticated color palette with golden accents
+- **Mobile-First**: Responsive design across all devices
 
 ## Color Palette
 
 ```css
-Primary:   #1E293B (Deep Blue - Trust & Professionalism)
-Secondary: #10B981 (Emerald Green - Growth & Restaurant)
-Accent:    #F97316 (Vibrant Orange - Energy & CTA)
-Neutral:   #64748B (Slate Gray)
-Background: #FAFAFA (Off-white)
-Luxury:    #D4AF37 (Subtle Gold - Premium badges)
+Primary:   Golden/Amber tones - Warmth & Luxury
+Background: Dark charcoal - Elegance & Sophistication
+Foreground: Off-white - Readability
+Accents:   Subtle gold highlights - Premium feel
 ```
+
+## Typography
+
+- **Display Font**: Great Vibes - Elegant script for the restaurant name
+- **Body Font**: Poppins - Clean, modern, highly readable
+- **Weights**: Light (300) and Regular (400) for refined appearance
 
 ## Technologies
 
-- **Next.js 16** - React framework with App Router
+- **Next.js 15** - React framework with App Router
 - **TypeScript** - Static typing
 - **Tailwind CSS** - Utility-first CSS framework
 - **ShadCN UI** - Modern, accessible UI components
 - **Lucide React** - Beautiful icon system
-- **Prisma** - Next-generation ORM
 
-## Key Features
+## Key Sections
 
-- **Modern Navigation**: Glassmorphic navbar with scroll effects
-- **Hero Section**: Gradient mesh background with floating orbs
-- **Bento Grid Features**: Asymmetric layout showcasing platform capabilities
-- **Pricing Cards**: Animated cards with glow effects and gradient borders
-- **Testimonials**: Customer reviews with star ratings
-- **CTA Footer**: Gradient-enhanced footer with final conversion push
-- **Responsive Design**: Mobile-first, fully responsive across all devices
-- **Performance**: Optimized animations and smooth 60fps transitions
+- **Navigation**: Clean header with smooth scroll navigation
+- **Hero Section**: Full-screen welcome with restaurant name in Great Vibes
+- **Menu Section**: Elegant presentation of culinary offerings
+- **Gallery**: Visual showcase of dishes and ambiance
+- **Reservation**: Contact information and booking details
+- **Footer**: Restaurant branding with Great Vibes font
 
 ## Installation
 
@@ -62,48 +63,33 @@ npm run dev
 ```
 resto-site/
 ├── app/
-│   ├── layout.tsx          # Root layout with Inter font
-│   ├── page.tsx            # Main landing page
-│   └── globals.css         # Custom CSS utilities
+│   ├── layout.tsx          # Root layout with font configuration
+│   ├── page.tsx            # Main restaurant page
+│   └── globals.css         # Global styles and theme
 ├── components/
 │   ├── ui/                 # ShadCN UI components
-│   ├── navigation.tsx      # Glassmorphic navbar
-│   ├── hero.tsx           # Hero with gradient mesh
-│   ├── features.tsx       # Bento grid features
-│   ├── pricing.tsx        # Pricing cards with glow
-│   ├── testimonials.tsx   # Customer testimonials
-│   └── footer.tsx         # CTA footer
+│   ├── navigation.tsx      # Site navigation
+│   ├── hero.tsx            # Hero section
+│   ├── menu.tsx            # Menu display
+│   ├── gallery.tsx         # Photo gallery
+│   ├── reservation.tsx     # Reservation/contact info
+│   └── footer.tsx          # Site footer
 ├── lib/
-│   └── utils.ts           # Utility functions
-└── tailwind.config.ts     # Tailwind configuration
+│   └── utils.ts            # Utility functions
+└── tailwind.config.ts      # Tailwind configuration
 ```
 
-## Custom Utilities
+## Restaurant Information
 
-The project includes custom CSS utilities for modern effects:
+**Le Gourmet**
+- Address: 15 Rue de la Paix, 75002 Paris, France
+- Phone: +33 1 42 65 78 90
+- Email: contact@legourmet.fr
 
-- `.glass` - Glassmorphism effect
-- `.glass-card` - Enhanced glass card
-- `.gradient-mesh` - Multi-color gradient
-- `.gradient-text` - Gradient text fill
-- `.card-lift` - Hover lift animation
-- `.mesh-bg` - Radial gradient mesh background
-- `.glow-*` - Glow effects (accent, secondary, luxury)
-
-## Design Inspirations
-
-- [Stripe](https://stripe.com) - Minimalist tech aesthetic
-- [Linear](https://linear.app) - Fluid animations
-- [Vercel](https://vercel.com) - Contemporary design
-- [Cal.com](https://cal.com) - Bento grid layouts
-- [Resend](https://resend.com) - Elegant glassmorphism
-
-## Typography
-
-- **Font**: Inter (all weights 400-900)
-- **Display**: Inter Display Extrabold for headlines
-- **Body**: Inter Regular/Medium
-- **Tracking**: Tight tracking (-tracking-tight) for impact
+**Hours:**
+- Tuesday - Saturday: 12:00 - 14:00, 19:00 - 22:00
+- Sunday: 12:00 - 14:00
+- Closed Monday
 
 ## Scripts
 
@@ -114,7 +100,7 @@ The project includes custom CSS utilities for modern effects:
 
 ## Performance
 
-- Sub-second page loads
-- 60fps animations
 - Optimized images and fonts
-- Minimal JavaScript bundle
+- Mobile-first responsive design
+- Fast page loads
+- Smooth scrolling navigation

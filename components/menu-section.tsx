@@ -5,7 +5,17 @@ import { Utensils, Wine, Coffee, Cake, Sparkles, ChefHat } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function MenuSection() {
-  const menuCategories = [
+  const menuCategories: Array<{
+    icon: any
+    title: string
+    description: string
+    featured?: boolean
+    items: Array<{
+      name: string
+      price: string
+      badge?: string
+    }>
+  }> = [
     {
       icon: Utensils,
       title: "Entrées",

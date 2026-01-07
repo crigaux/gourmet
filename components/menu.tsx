@@ -82,7 +82,7 @@ export function Menu() {
           {menuCategories.map((category, idx) => (
             <div key={idx}>
               {/* Category Title */}
-              <h3 className="text-3xl font-light tracking-wide text-primary mb-10 text-center">
+              <h3 className="mb-10 text-center">
                 {category.name}
               </h3>
 
@@ -91,15 +91,15 @@ export function Menu() {
                 {category.dishes.map((dish, dishIdx) => (
                   <div key={dishIdx} className="border-b border-border pb-8 last:border-0">
                     <div className="flex justify-between items-baseline mb-3 gap-4">
-                      <h4 className="text-xl font-normal text-foreground tracking-wide">
+                      <h4 className="text-3xl font-semibold text-foreground">
                         {dish.name}
                       </h4>
                       <div className="flex-1 border-b border-dotted border-border/50 mx-3 mb-1" />
-                      <span className="text-lg font-normal text-primary whitespace-nowrap">
+                      <span className="text-3xl font-bold text-primary whitespace-nowrap">
                         {dish.price}
                       </span>
                     </div>
-                    <p className="text-base text-muted-foreground font-light leading-relaxed">
+                    <p className="text-xl text-muted-foreground font-light leading-relaxed">
                       {dish.description}
                     </p>
                   </div>

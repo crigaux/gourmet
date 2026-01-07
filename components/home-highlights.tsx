@@ -115,11 +115,13 @@ export function HomeHighlights() {
                 d'exception tout en osant des associations audacieuses. Sa quête perpétuelle
                 d'excellence et son respect des saisons font de chaque repas une expérience unique.
               </p>
-              <Link href="/about">
-                <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white font-normal px-8 py-6 text-base">
-                  Notre histoire
-                </Button>
-              </Link>
+              <div className="pt-4">
+                <Link href="/about">
+                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white font-normal px-8 py-6 text-base">
+                    Notre histoire
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>

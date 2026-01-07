@@ -10,7 +10,11 @@
       "Bash(findstr:*)",
       "Bash(cmd.exe /c \"taskkill /F /PID 48408\")",
       "Bash(powershell -Command \"Stop-Process -Id 48408 -Force\")",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(npm run build:*)",
+      "Bash(git push)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }

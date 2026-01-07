@@ -19,25 +19,25 @@ export function Reservation() {
 
         {/* Contact Info */}
         <div className="space-y-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-3xl mx-auto">
             {/* Contact Details */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-base text-muted-foreground font-light mb-2">Téléphone</h3>
+                <h3 className="text-xl text-muted-foreground font-light mb-2">Téléphone</h3>
                 <a href="tel:+33142657890" className="text-xl text-foreground hover:text-primary transition-colors">
                   +33 1 42 65 78 90
                 </a>
               </div>
 
               <div>
-                <h3 className="text-base text-muted-foreground font-light mb-2">Email</h3>
+                <h3 className="text-xl text-muted-foreground font-light mb-2">Email</h3>
                 <a href="mailto:contact@legourmet.fr" className="text-xl text-foreground hover:text-primary transition-colors">
                   contact@legourmet.fr
                 </a>
               </div>
 
               <div>
-                <h3 className="text-base text-muted-foreground font-light mb-2">Adresse</h3>
+                <h3 className="text-xl text-muted-foreground font-light mb-2">Adresse</h3>
                 <p className="text-xl text-foreground">15 Rue de la Paix</p>
                 <p className="text-lg text-muted-foreground">75002 Paris, France</p>
               </div>
@@ -46,7 +46,7 @@ export function Reservation() {
             {/* Hours */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-base text-muted-foreground font-light mb-4">Horaires</h3>
+                <h3 className="text-xl text-muted-foreground font-light mb-4">Horaires</h3>
                 <div className="space-y-2">
                   <p className="text-lg text-foreground">Mardi - Samedi</p>
                   <p className="text-base text-muted-foreground">12h00 - 14h00, 19h00 - 22h00</p>

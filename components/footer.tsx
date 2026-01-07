@@ -31,7 +31,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="inline-block mb-4">
-              <span className="text-3xl font-light tracking-wide text-primary">Le Gourmet</span>
+              <span className="text-4xl font-script text-primary">Le Gourmet</span>
             </Link>
             <p className="text-base text-[#F8F6F3]/80 leading-relaxed mb-6 font-light">
               Restaurant gastronomique étoilé Michelin. Cuisine française contemporaine au cœur de Paris.

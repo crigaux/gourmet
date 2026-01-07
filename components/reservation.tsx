@@ -49,7 +49,8 @@ export function Reservation() {
                 <h3 className="text-2xl text-muted-foreground font-light mb-4">Horaires</h3>
                 <div className="space-y-2">
                   <p className="text-lg text-foreground">Mardi - Samedi</p>
-                  <p className="text-base text-muted-foreground">12h00 - 14h00, 19h00 - 22h00</p>
+                  <p className="text-base text-muted-foreground">12h00 - 14h00</p>
+                  <p className="text-base text-muted-foreground">19h00 - 22h00</p>
                 </div>
                 <div className="space-y-2 mt-4">
                   <p className="text-lg text-foreground">Dimanche</p>

@@ -63,7 +63,7 @@ export function Reservation() {
           </div>
 
           {/* CTA */}
-          <div className="text-center pt-12 border-t border-border">
+          <div className="text-center pt-12 border-t border-border max-w-2xl mx-auto">
             <Link href="tel:+33142657890">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 font-normal px-10 py-7 text-lg">
                 Réserver par téléphone

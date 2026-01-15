@@ -16,7 +16,8 @@ export function Reservation() {
       // Handle reservation success
       if (event.data.type === 'reservation_success') {
         console.log('Reservation created:', event.data.reservationId)
-        // Optionally: show a confirmation message, trigger analytics, etc.
+        // Scroll to top of page on successful reservation
+        window.scrollTo({ top: 0, behavior: 'smooth' })
       }
 
       // Handle errors

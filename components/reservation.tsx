@@ -56,7 +56,7 @@ export function Reservation() {
           {/* Widget iframe */}
           <iframe
             id="tablepost-widget"
-            src="https://tablepost-khaki.vercel.app/widget/reservation/le-gourmet?primary=D4AF37&theme=dark"
+            src="https://tablepost-khaki.vercel.app/widget/reservation/le-gourmet?theme=transparent&primary=D4AF37&shadow=none"
             width="100%"
             frameBorder="0"
             allow="clipboard-write"
